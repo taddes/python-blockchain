@@ -1,0 +1,27 @@
+Blockchain
+
+Distributed data storage across many machines-> collection of containers (blocks) which are connected. Order of blocks matter.
+Each block contains some data (much like an individual folder). Each block knows about what came before it.
+Subfolders within blockchain is what is contained within block. Runs on multiple nodes (wallet)
+
+A block can contain any type of data.
+
+Multiple blocks exist in one blockchain.  Each block knows about the other (a hash/unique id. Same txt for 
+same input).  The following block has this data from the preceding block.
+
+Therefore, same input = same output. No other input leads to same hash
+
+Cryptocurrency
+
+Data you store in a block is a list of transactions, the coins transferred in the form of your Cryptocurrency
+3 Core concepts: **WHO IS SENDING HOW MUCH TO WHOM**
+
+Coins are transferred with transactions. Cant' be changed to other real currencies inside the blockchain.
+Value of coin determined by the value the participants of the blockchain assign to it. What is willing 
+to be paid for it in a real currency. (USD, EU).
+
+Therefore, high volatility.
+
+Coins created by mining ( a reward for the effort ) -> how new blocks are added, via new transactions. Adding
+a new block to the blockchain. 
+
