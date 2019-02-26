@@ -27,3 +27,34 @@ a new block to the blockchain.
 
 Distributed, secure data storage. Cryptocurrency is if the content is coins that are sent a to b
 
+2. Diving into PY
+REPL -> RedEvalPrintLoop
+R 2+2
+E ...
+P 4
+Loop --> back to start
+
+DATA TYPES
+Number -> INTEGER (34) and FLOAT (1.8679)
+Booleans -> True/False
+Strings -> Text (' or ")
+
+ctrl + z to exit PY REPL
+
+Integer -> can hold as big or small a number as supported by OS
+
+int() converts value to an integer (how to avoid string concat)
+
+Float always rounds down!
+
+Float -> can hold as big or small a number as supported by OS
+float() converts value to a float (how to avoid string concat)\
+
+Integers and floats can be written with underscores as a means to conveniently format them, make themm
+more readable! 1_000_000 
+
+Operators
+/ Division always results in a FLOAT
+// is integer division that returns an integer, removing decimal place
+** power of Operators
+% modulus returns the remainder
