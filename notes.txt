@@ -58,3 +58,6 @@ Operators
 // is integer division that returns an integer, removing decimal place
 ** power of Operators
 % modulus returns the remainder
+
+*Multiply strings! Repeats the string the number of times specified
+Ex. "Hello" * 5 = HelloHelloHelloHelloHello
