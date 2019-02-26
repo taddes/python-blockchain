@@ -25,3 +25,5 @@ Therefore, high volatility.
 Coins created by mining ( a reward for the effort ) -> how new blocks are added, via new transactions. Adding
 a new block to the blockchain. 
 
+Distributed, secure data storage. Cryptocurrency is if the content is coins that are sent a to b
+
