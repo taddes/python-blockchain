@@ -61,3 +61,26 @@ Operators
 
 *Multiply strings! Repeats the string the number of times specified
 Ex. "Hello" * 5 = HelloHelloHelloHelloHello
+
+Exponential notation: 1e5 (typically stores as a float)
+Floating point imprecision is the result of values that are not cleanly divisible,
+hence values like 1 - 0.9 does not output 0.01 BUT 0.0999999999.
+
+Inherent to computers and python
+
+Strings
+'' or ""
+
+"" allow you to use ' within them, without having to escape chars
+To write longer text with line breaks:
+long_text = """you can add your test\n more text"""
+
+
+Lists (read ARRAY)
+Can hold multiple values of same type, or of multiple types
+[     ,  ,   ,   ,     ]
+access value stored at an index:  blockchain[2] 
+
+List is unchainged if you referece data in an index and modify it
+List methods .append(valueToAdd) 
+.pop() - removes last value of list (returning the removed value)
