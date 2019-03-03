@@ -1,0 +1,23 @@
+Loops
+===========
+for -> Elements in a list
+for element in list:
+  print(element)
+
+**Bad idea to change the iterable part of the loop while looping through it. Decrement/Increment problem
+
+
+while -> as long as a condition is true
+while True:
+  print('INFINITY!')
+
+**Provide an exit condition!
+
+if-Else 
+Allows conditional flow from user input or specific data values
+
+break ->
+Quit a loop before it completes (both for and while loops)
+
+continue ->
+Skip current interation
