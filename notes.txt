@@ -94,3 +94,7 @@ def functionName():
   If arg not provided, this default value used
 
   Two lines between function definitions are part of official style for PY
+
+  Keyword arguments allow us to pass arguments different from the order in which they are defined
+  What data should go into which arg
+  arg_name=value arg_nae2=value
