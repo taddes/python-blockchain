@@ -21,3 +21,8 @@ Quit a loop before it completes (both for and while loops)
 
 continue ->
 Skip current interation
+
+BOOL in and is
+is does not check values, but checks if same object in memory (reference types versus )
+
+in checks if a value is contained within a list
