@@ -98,3 +98,24 @@ def functionName():
   Keyword arguments allow us to pass arguments different from the order in which they are defined
   What data should go into which arg
   arg_name=value arg_nae2=value
+
+  Variable Scope
+
+  Global -> Root level definition (not in a function)
+  Local -> A variable defined within a function
+
+  use global keyword before a variable to use global version of a variable
+
+  **Check PEP Docs for style guide, proposals for Python spec, etc!**
+  PEP 8 for styling
+
+  DOCSTRINGS, multi-line strings """ """
+  This adds an explanation or string data to a function
+
+  def function_name(args)
+    """Summary of the function
+
+    Arguments:
+      :trans_amount
+
+    """

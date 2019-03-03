@@ -1,0 +1,142 @@
+
+less -> reads a file, one page at a time
+
+locate fileName -> locates file in filesys
+
+rmdir dirname -> removes directory 
+
+rm * -> removes ALL in current directory
+mv ../dir /newDir
+
+cp file* newLocation/ -> acts on any file with name starting with character before *
+rm file? / cp file? -> copy or delete up to the end of that text
+
+cat reads a file in terminal 
+
+nano opens a text editor in terminal
+
+
+APPEND TEXT
+cat linux.txt | grep text >> newfile.txt
+
+REPLACE TEXT
+cat linux.txt | grep text > newfile.txt
+
+head -> prints first 10 lines
+tail -> prints last 10 lines
+
+cut -d: -f3 dir/fileName
+CUT  -d -> delimiter, here a colon, -f is FIELD (created by breaking with delimiter)
+
+| sort -name
+wc /dir/name -> word count
+
+Redirect:
+Standard Streams
+stdin -> Standard Input -> 0
+stdout -> Standard Output -> 1
+stderr -> Standard Error -> 2
+
+OPEN MYSQL DB ENGINE IN ROOT
+mysql -u root -p < mydatabase.sql
+
+If you get an incorrect result, use stderr to write to an err file
+Ex. Incorrect url
+wget pluralsight.commm 2> errorfile.txt
+
+Working with Archives
+-useful to use compression -> TAR -> Take Archives
+.tar -> tar compressed
+.gz -> g zip compression algo
+
+To uncompress:
+
+tar xzf latest.tar.gz
+x-> extract z->zipped f->filename
+->Creates new dir uncompressed
+
+To compress:
+tar czf newarchive.tar.gz dirname/
+c->created z->zip compress f->file
+
+To compress if you forgot to zip
+gzip fileName.tar
+
+unzip fileName -> UNZIPS!
+zip filename.zip -> compresses current dir into zipfiles
+
+Linux Kernel and fixing issues with peripherals!
+
+lsusb -> lists usb devices
+lspci 
+
+sudo lshw -> all hardware
+sudo lshw > lshw-output
+(text file)
+then less lshw-output
+
+uname -r -> version of linux Kernel
+ls /lib/modues -> module names for each Kernel
+
+lsmod | grep sound -> list modules, grep mod for files with sound
+
+
+NETWORK Connectivity
+Troubleshoot network config
+===========
+
+ip route show -> show ip route
+sudo dhclinet
+
+DNS config
+===========
+Map numeric addresses to human addresses
+
+host url.com -> returns DNS address
+ping 1.1.1.1 -> sends short requests to ip addresses
+
+SSH -> Secure Shell Protocol -> Remote machine access
+===========
+1. Access remote/virtual servers
+2. Secure said access to servers (virtual machines, no physical access, distant servers)
+->Encrypted access via session encryption
+
+SERVER
+apt install openssh-server or yum install openssh-server
+
+CLIENT 
+apt install openssh-client or yum install openssh-clients
+
+/etc/ssh DIR CONTROLS SSH -> sshd_config ssh_config (clent to remote hosts)
+
+ssh username@serverAddress
+exit -> to exit
+
+scp -> secure copy between machines
+scp local-file.sh user@remotehost:/abs/remote/address
+
+Linux Scripting
+=========
+Bash scripts end in .sh 
+Start with SHEBANG LINE!
+#!/bin/bash
+
+#!/bin/bash
+declare -i number1
+declare -i number2
+declare -i total
+echo "What is your favorite number?"
+  read number1
+echo "What number do you hate?"
+  read number2
+total=$number1*$number2 
+  echo "AHA! They equal " $total
+exit 0
+
+chmod +x myscript.sh -> to allow execution
+
+man builtins will get you all the native bash options for importing functionality
+
+
+
+
