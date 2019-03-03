@@ -22,7 +22,24 @@ Quit a loop before it completes (both for and while loops)
 continue ->
 Skip current interation
 
-BOOL in and is
+BOOL in and is and not
 is does not check values, but checks if same object in memory (reference types versus )
 
 in checks if a value is contained within a list
+
+not 
+Check if a value is contained within a list
+can combine not with is and in: not in, is not!
+
+!= is for value comparision
+
+and / or -> use and / or to combine conditionals 
+if age > 20 and age < 30:
+
+Group conditionals
+To group conditionals so they are interpreted correctly, use parenthesis
+Ex.
+name = 'Pepper'
+if name == 'Pep' and (age>20 or age <30) WORKS -> FALSE
+
+if name == 'Pep' and age > 20 and age < 30 -> True ?!?!? -> not strongly tied, the < 30 assesses as true
