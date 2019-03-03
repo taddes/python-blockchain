@@ -84,3 +84,13 @@ access value stored at an index:  blockchain[2]
 List is unchainged if you referece data in an index and modify it
 List methods .append(valueToAdd) 
 .pop() - removes last value of list (returning the removed value)
+
+Fuctions
+
+def functionName():
+  return Value
+
+  default args defined within paren as (varName = 4)
+  If arg not provided, this default value used
+
+  Two lines between function definitions are part of official style for PY
