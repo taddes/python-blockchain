@@ -43,3 +43,14 @@ name = 'Pepper'
 if name == 'Pep' and (age>20 or age <30) WORKS -> FALSE
 
 if name == 'Pep' and age > 20 and age < 30 -> True ?!?!? -> not strongly tied, the < 30 assesses as true
+
+Loop Else
+for and while loops can have an else clause after them, as an alternative to their behavior
+
+RANGE function in for loop -> similar to for loop iterator form in JS
+range(up to, excluding element, n- 1)
+
+for i in range(5, 10) -> STarts at 5 goes to final value (non inclusivve)
+
+fir i in range(5, 10, 2) -> stepwise motion in 2s through each interation
+FLOATS DONT WORK ONLY POSITIVE AND NEGATIVE INTEGERS

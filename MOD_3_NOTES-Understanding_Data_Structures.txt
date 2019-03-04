@@ -1,0 +1,28 @@
+Transactions in Blockchain
+
+A chain of blocks, all of which contain data and metadata. Each block has data about the previous block
+on the previous transactions.  Sender, Recipient, Amount.
+
+Mining a block -> Providing the computational resources to process an unprocessed transaction (list of them).
+Eventually, these will be added to a new block.  Mining will result in a reward for mining a new block by 
+emptying list of outstanding transactions.
+
+Need a data structure which stores key-value pairs of Transaction data (sender, recipient, amount), order
+doesn't matter.
+
+Outgoing list needs a data structure of mutable list of values, order doesn't matter
+
+Data structure for the blockchain which is mutable, but order DOES matter
+
+Each identifier should only occur once, and be unique
+
+============
+Iterables
+-> We can loop through them
+
+List : [ ]  : can hold multiple values, can nest lists within list, mutable, mostly one type, duplicates
+are allowed.
+
+Set:  {   }  : mutable, unordered (order not guaranteed), cannot have duplicates, mostly one type.
+
+Tuple:  (   ) : Immutable, ordered list, duplicates allowed, often mixed types. 
