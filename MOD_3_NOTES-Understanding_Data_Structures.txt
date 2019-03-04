@@ -26,3 +26,5 @@ are allowed.
 Set:  {   }  : mutable, unordered (order not guaranteed), cannot have duplicates, mostly one type.
 
 Tuple:  (   ) : Immutable, ordered list, duplicates allowed, often mixed types. 
+
+Dictionary {  'name': 'Value' }  :  Mutable, ordered map, no duplicate keys, often mixed types
