@@ -33,3 +33,18 @@ Dictionary {'key':'val'}  :  Basically Maps. Mutable, *unordered map, no duplica
 Unique identifier that has to be wrapped in quotations. KEYS must not be duplicated, but values can be 
 duplicates. UNIQUE KEY.  Mixed data types!
 
+Mapping data structures to parts of blockchain:
+Transaction (sender, recipient, amount) -> stores key-value pairs, order not important.
+Possibly a tuple, but a dictionary is better, since you always know what the key is
+
+List of transactions -> Needs to be mutable, need duplicates, order doesn't matter.
+List!
+
+Blockchain -> Mutable, order matters.  
+List!
+
+Single Block -> Hash and Index, transactions. key-value pairs
+Dictionary! Could use tuple
+
+Participant list -> unique values, order doesn't matter. Guarantees each val occurs only once
+Set!
