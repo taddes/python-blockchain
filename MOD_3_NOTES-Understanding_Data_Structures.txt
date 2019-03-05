@@ -18,13 +18,18 @@ Each identifier should only occur once, and be unique
 
 ============
 Iterables
+------------
 -> We can loop through them
 
 List : [ ]  : can hold multiple values, can nest lists within list, mutable, mostly one type, duplicates
-are allowed.
+are allowed, ordered.
 
-Set:  {   }  : mutable, unordered (order not guaranteed), cannot have duplicates, mostly one type.
+Set:  {   }  : mutable, unordered (order not guaranteed), *cannot have duplicates*, mostly one type.
 
-Tuple:  (   ) : Immutable, ordered list, duplicates allowed, often mixed types. 
+Tuple:  (   ) : Immutable, ordered list, duplicates allowed, *often mixed types. Good for hard-coded defaults
+Good for grouping sorts of data, say key values, one after another.
 
-Dictionary {  'name': 'Value' }  :  Mutable, ordered map, no duplicate keys, often mixed types
+Dictionary {'key':'val'}  :  Basically Maps. Mutable, *unordered map, no duplicate keys, often mixed types.
+Unique identifier that has to be wrapped in quotations. KEYS must not be duplicated, but values can be 
+duplicates. UNIQUE KEY.  Mixed data types!
+
