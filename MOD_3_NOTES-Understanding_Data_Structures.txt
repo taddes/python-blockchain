@@ -48,3 +48,44 @@ Dictionary! Could use tuple
 
 Participant list -> unique values, order doesn't matter. Guarantees each val occurs only once
 Set!
+
+-> To access values within a dictionary:
+Use [] on list to access the value
+last_block = [ ... ]
+for keys in last_block:
+    value = last_block[keys]
+    or last_block['key_name']
+
+++++++===
+List Comprehension
+
+(Alternative to a loop applying logic to a list)
+list = [1, 2, 3, 4]
+double = []
+
+For loop version
+for element in list:
+    double.append(element * 2)
+
+double = [2, 4, 6, 8]
+
+--------------
+List Comprehension
+
+double = [el * 2 for el in list]
+read from right to left -> for el in list (for each element in each given list), apply logic to first el
+FIRST EL mentioned is what will be outputted in new list
+
+ADDING CONDITIONALS TO Comprehension
+-> Allows us to apply conditional logic to comprehensions
+Ex. 
+dup_list = [el * 2 for el in list if el %2 == 0]
+
+calc_items = [1,2]
+dup_list = [el * 2 for el in list if el in calc_items]
+---------------
+Dict Comprehension
+Take a dictionary that convers tuples to key value pairs
+
+stats = [('age', 29), ('weight', 75), ('height', 175)]
+dict_stats = {key: value for (key, value) in stats}
