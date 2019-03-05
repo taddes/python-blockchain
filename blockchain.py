@@ -1,3 +1,9 @@
+# Genesis block - hard coded start chain
+genesis_block =  {
+    'previous_hash': '',
+    'index': 0,
+    'transactions': []
+  }
 blockchain = []
 open_transactions = []
 owner = 'Taddes'
