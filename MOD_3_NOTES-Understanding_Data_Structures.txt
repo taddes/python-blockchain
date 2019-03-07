@@ -89,3 +89,17 @@ Take a dictionary that convers tuples to key value pairs
 
 stats = [('age', 29), ('weight', 75), ('height', 175)]
 dict_stats = {key: value for (key, value) in stats}
+
+
+===============
+ENUMERATE
+--------
+
+Calling enumerate([]) on a list will return a tuple with key-value pairs, with the key corresponding
+to the index of the list value
+
+    for (index, block) in enumerate(blockchain):
+
+Creating a set -> via set() function, passing in a list
+If you pass in a string, say ('Taddes'), you get '{'T', 'a', 'd', 'd', 'e', 's'}
+set(['Taddes', 'Sarah', 'Pepper']) -> {'Taddes', 'Sarah', 'Pepper'}
