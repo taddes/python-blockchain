@@ -69,8 +69,9 @@ for element in list:
 
 double = [2, 4, 6, 8]
 
---------------
+------------------
 List Comprehension
+==================
 
 double = [el * 2 for el in list]
 read from right to left -> for el in list (for each element in each given list), apply logic to first el
@@ -91,9 +92,9 @@ stats = [('age', 29), ('weight', 75), ('height', 175)]
 dict_stats = {key: value for (key, value) in stats}
 
 
-===============
+=========
 ENUMERATE
---------
+---------
 
 Calling enumerate([]) on a list will return a tuple with key-value pairs, with the key corresponding
 to the index of the list value
@@ -103,3 +104,23 @@ to the index of the list value
 Creating a set -> via set() function, passing in a list
 If you pass in a string, say ('Taddes'), you get '{'T', 'a', 'd', 'd', 'e', 's'}
 set(['Taddes', 'Sarah', 'Pepper']) -> {'Taddes', 'Sarah', 'Pepper'}
+
+
+============================
+References vs Value Copying
+-----------------------------
+
+Everything but booleans and strings is copied by refernece, not by value.  
+Lists are stored in memory only ONCE. Stored in same place in memory.
+my_list = [a, b, c, d, e]
+                    ^
+dup_list = my_list  | 
+
+Therefore: dup_lost[0] = z makes my_list = [z, b, c, d, e]
+
+LIST IS NOT COPIED, REFERS TO SAME PLACE! Any change to one changes the other
+
+How to properly copy a list
+==========================
+dup_list = my_list[:]
+Range selector, that copies all elements in a list, creating a new list populated by new elements
