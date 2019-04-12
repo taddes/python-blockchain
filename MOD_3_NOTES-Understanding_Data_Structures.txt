@@ -174,3 +174,14 @@ list_one is list_two // False
 ==============
 all and any functions
 --------------
+Boolean Checks
+new_list = [True, True, False]
+any(all_list) -> True
+all(all-_list) -> True
+
+Any -> Checks whether any values are True in a list
+All -> Checks whether all values are True in a list
+
+How to use this to you advantage to filter through lists
+numbers = [1,2,3,-5]
+all([el > 0 for el in number])
