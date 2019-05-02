@@ -1,0 +1,74 @@
+============
+Functions and Strings
+------------
+
+Strings are iterable primitives and can behave like lists, via their inbuilt methods, however strings are immutable,
+so you can't edit them. Can be replaced in memory, but not mutated.
+**help(str)** provides all methods
+
+============
+Format strings
+------------
+- A clean formatting method for dynamic values, to avoid concatenation. 
+**Can pass in numerical index of arguments!**
+
+name = 'Taddes'
+age = 30
+
+'My name is {} and I am {} years old'.format(name, age)
+
+**Can pass in numerical index of arguments!**
+'My name is {0} and I am {1} years old. I mean it, I am really {1}'.format(name, age)
+
+**Can reference arguments by name
+' I am {name} and am {years} years old'.format(name=name, years=age)
+
+**Format the output of strings**
+--Many methods exist to modify the output format of a string--
+funds = 150.97524
+
+'Funds: {:f}'.format(funds)
+# 'Funds: 150.972300'
+
+'Funds: {:1f}'.format(funds)
+#'Funds: 151.0'
+
+'Funds: {:10f}'.format(funds)
+#'Funds:          151.0'
+
+*Shorthand PY3*
+f'Funds: {funds}'
+
+============
+Map Function
+------------
+*NOTE: List comprehension faster, and preferred
+Allows you to pass in a function to mutate values within a lists
+
+my_list = [1,2,3,4]
+def mult(el):
+    return el * 2
+
+list(map(mult, my_list))
+# [2,4,6,8]
+
+============
+Lambda Functions
+------------
+* A more efficient means of creating a simple function that has only one argument and returns a value.
+A one-off, anonomyous function
+
+lambda (to invoke function)
+argument list, comma seperated args
+:
+expression body
+
+list(map(lambda el: el * 2, simple_list))
+
+============
+Reducing Lists
+------------
+*Reduce/convert all values of a list to a single value (Ex. Add, multiply, etc.)
+-Has current value of the list
+-has Last result, which is needed to reduce (value previous)
+
