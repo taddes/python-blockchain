@@ -1,0 +1,26 @@
+============
+Python Standard Library
+------------
+
+Package Imports
+---------------
+
+*Import entire module*
+Bundles all features and objects in that module
+---
+import random 
+
+
+*Import entire module WITH ALIAS*
+---
+import random as rn
+
+*Import single function from*
+Targets single or multiple features from package
+---
+from random import randomizer
+
+*Import single function from*
+Targets single or multiple features WITH ALIAS  from package WITH ALIAS
+---
+from random import randomizer as rnd
