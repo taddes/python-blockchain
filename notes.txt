@@ -120,4 +120,20 @@ def functionName():
 
     """
 
+  Proof Of Work (PoW)
+  -Increases challenge of mining blocks (more time and resources)
+  -Controls speed by which coins enter our network
+  -Essential security concept that prevents editing blockchain
+
+  ==
+  Employs using a hash that takes some block data (trans + prev_hash)
+  to fulfill some criteria to validate the work. Added to block metadata.
+
+  Other nodes can easily verify the proof of work and hence the validity of the block. 
+
+  ==
+  -Generate hash from: transactions, previous hash, proof number (nonce - num used once)
+  -64 Characters (if using SHA256)
+  -Beginning characters have a set of leading characters, typically X 0s. The more 0s, the 
+  harder the computation.
   
