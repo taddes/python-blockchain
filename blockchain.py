@@ -26,9 +26,9 @@ participants = {'Taddes'}
 
 def save_data():
     with open('blockchain.txt', mode='w') as f:
-        f.write(blockchain)
+        f.write(str(blockchain))
         f.write('\n')
-        f.write(open_transactions)
+        f.write(str(open_transactions))
     
 
 
@@ -141,6 +141,7 @@ def mine_block():
       'proof': proof
     }
     blockchain.append(block)
+    save_data()
     return True
 
 def get_transaction_value():
