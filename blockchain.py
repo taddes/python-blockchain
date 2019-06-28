@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-import functools
-import hashlib
-import json
-
-# reward given to a miner (for creating a new block)
-MINING_REWARD = 10
-
-=======
 from functools import reduce
 import hashlib as hl
 from collections import OrderedDict
@@ -15,7 +6,6 @@ from hash_util import hash_string_265, hash_block
 
 # reward given to a miner (for creating a new block)
 MINING_REWARD = 10
->>>>>>> 1f3a0d008ff5cbbf732a9cbc74ae68165f4c8aeb
 # Genesis block - hard coded start chain
 genesis_block =  {
     'previous_hash': '',
@@ -23,10 +13,7 @@ genesis_block =  {
     'transactions': [],
     'proof': 100
   }
-<<<<<<< HEAD
-=======
 
->>>>>>> 1f3a0d008ff5cbbf732a9cbc74ae68165f4c8aeb
 # Initialize our empty blockchain list
 blockchain = [genesis_block]
 # Unhandled Transactions
@@ -37,25 +24,12 @@ owner = 'Taddes'
 participants = {'Taddes'}
 
 
-<<<<<<< HEAD
-def hash_block(block):
-    """Hashes a block and returns a string representatio of it.
-
-    Arguments:
-        :block: The block that should be hashed
-    """
-<<<<<<< HEAD
-    return hashlib.sha256(json.dumps(block).encode()).hexdigest()
-=======
-    return hl.sha256(json.dumps(block, sort_keys=True).encode()).hexdigest()
-=======
 def save_data():
     with open('blockchain.txt', mode='w') as f:
         f.write(blockchain)
         f.write('\n')
         f.write(open_transactions)
     
->>>>>>> f41bb5ac260cd0b73a33377fd8b989495e944d3e
 
 
 def valid_proof(transactions, last_hash, proof):
@@ -72,7 +46,6 @@ def proof_of_work():
         proof += 1
     return proof
 
->>>>>>> 1f3a0d008ff5cbbf732a9cbc74ae68165f4c8aeb
 
 
 def get_balance(participant):
@@ -106,7 +79,6 @@ def get_last_blockchain_value():
 
 def verify_transaction(transaction):
     """Verify a transaction by checking whether the sender has sufficient coins.
-
     Arguments:
         :transaction: The transaction that should be verified.
     """
@@ -120,16 +92,6 @@ def verify_transaction(transaction):
 
 def add_transaction(recipient, sender=owner, amount=1.0):
     """ Append a new value, as well as the last blockchain value to the blockchain
-
-<<<<<<< HEAD
-  if verify_transaction(transaction):
-      open_transactions.append(transaction)
-      # Since this is defined as a set, any duplicate vlaues will be ignored!
-      participants.add(sender)
-      participants.add(recipient)
-      return True
-  return False
-=======
     Arguments:
         :recipient: The recipient of the coins.
         :sender: The sender of the coins.
@@ -150,7 +112,6 @@ def add_transaction(recipient, sender=owner, amount=1.0):
         participants.add(recipient)
         return True
     return False
->>>>>>> 1f3a0d008ff5cbbf732a9cbc74ae68165f4c8aeb
       
 
 def mine_block():
@@ -161,14 +122,6 @@ def mine_block():
     last_block = blockchain[-1]
     # Hash th elast block (=> to be able to compare it to stored hash value)
     hashed_block = hash_block(last_block)
-<<<<<<< HEAD
-    print(hashed_block)
-    reward_transaction = {
-        'sender': 'MINING',
-        'recipient': owner,
-        'amount': MINING_REWARD
-    }
-=======
     proof = proof_of_work()
     print(hashed_block)
     # Miners should be rewarded, so here is reward
@@ -178,7 +131,6 @@ def mine_block():
     #     'amount': MINING_REWARD
     # }
     reward_transaction = OrderedDict([('sender', 'MINING'), ('recipient', owner), ('amount', MINING_REWARD)])
->>>>>>> 1f3a0d008ff5cbbf732a9cbc74ae68165f4c8aeb
     copied_transactions = open_transactions[:]
     copied_transactions.append(reward_transaction)
 
